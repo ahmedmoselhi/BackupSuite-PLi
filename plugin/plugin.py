@@ -63,15 +63,8 @@ LOGFILE = "BackupSuite.log"
 VERSIONFILE = "imageversion"
 ENIGMA2VERSIONFILE = "/tmp/enigma2version"
 
-with open("/var/lib/opkg/info/enigma2-plugin-extensions-backupsuite.control") as origin:
-	for versie in origin:
-		if not "Version: " in versie:
-			continue
-		try:
-			versienummer = versie.split('+')[1]
-		except IndexError:
-			print("[BackupSuite] can't detect version!")
 
+versienummer = "v1.0"
 
 def backupCommandHDD():
 	if getBoxType().startswith("dm"):
