@@ -36,7 +36,7 @@ if [ -z $PYVERSION ]; then
 fi
 
 export LANG=$1
-export SHOW="python $LIBDIR/enigma2/python/Plugins/Extensions/BackupSuite/message.$PYEXT $LANG"
+export SHOW="python $LIBDIR/enigma2/python/Plugins/Extensions/BackupSuite/message.py $LANG"
 export HARDDISK=1
 echo -n $YELLOW
 $SHOW "message20"   	#echo "Full back-up to the harddisk"
